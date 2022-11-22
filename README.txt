@@ -1,3 +1,5 @@
+为什么1.16.5的官方mapping能够写的跟你妈狗屎一样？？？？
+他妈快照版都比你写的好一伯倍，哦当然有可能是我都中文插件有问题，但是mapping全责好吧
 
 Source installation information for modders
 -------------------------------------------
