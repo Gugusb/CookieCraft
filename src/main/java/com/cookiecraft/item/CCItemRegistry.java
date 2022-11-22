@@ -15,7 +15,14 @@ public class CCItemRegistry {
     public static RegistryObject<Item> SPECIAL_COOKIE = ITEMS.register("special_cookie", ItemSpecialCookie::new);
     public static RegistryObject<Item> COOKIE_INGOT = ITEMS.register("cookie_ingot", ItemCookieIngot::new);
     public static RegistryObject<Item> COOKIE_SWORD = ITEMS.register("cookie_sword", ItemCookieSword::new);
+
     public static RegistryObject<Item> MIX_COOKIE = ITEMS.register("mix_cookie", () -> {
         return new BlockItem(CCBlockRegistry.MIX_COOKIE.get(), new Item.Properties().group(CCItemGroup.COOKIE_CRAFT_MAIN));
+    });
+    public static RegistryObject<Item> EDIBLE_COOKIE = ITEMS.register("edible_cookie", () -> {
+        return new BlockItem(CCBlockRegistry.EDIBLE_COOKIE.get(), new Item.Properties().group(CCItemGroup.COOKIE_CRAFT_MAIN));
+    });
+    public static RegistryObject<Item> COOKIE_MAKER = ITEMS.register("cookie_naker", () -> {
+        return new BlockItem(CCBlockRegistry.COOKIE_NAKER.get(), new Item.Properties().group(CCItemGroup.COOKIE_CRAFT_MAIN));
     });
 }

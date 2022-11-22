@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "num=1": {"model": "cookiecraft:block/edible_cookie_1"},
+    "num=2": {"model": "cookiecraft:block/edible_cookie_2"},
+    "num=3": {"model": "cookiecraft:block/edible_cookie_3"},
+    "num=4": {"model": "cookiecraft:block/edible_cookie_4"}
+  }
+}

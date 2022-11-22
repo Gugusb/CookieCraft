@@ -2,6 +2,7 @@ package com.cookiecraft;
 
 import com.cookiecraft.block.CCBlockRegistry;
 import com.cookiecraft.item.CCItemRegistry;
+import com.cookiecraft.tileentity.CCTileEntityTypeRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
@@ -15,5 +16,6 @@ public class CookieCraftMod {
     public CookieCraftMod(){
         CCItemRegistry.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
         CCBlockRegistry.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        CCTileEntityTypeRegistry.TILE_ENTITY_TYPE_DEFERRED_REGISTER.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
 }

@@ -2,5 +2,7 @@
   "item.cookiecraft.cookie_ingot": "饼干块",
   "item.cookiecraft.special_cookie": "奇怪的饼干",
   "item.cookiecraft.cookie_sword": "饼干之触",
-  "block.cookiecraft.mix_cookie": "混合饼干"
+  "block.cookiecraft.mix_cookie": "压缩饼干",
+  "block.cookiecraft.edible_cookie": "可食用饼干",
+  "message.cookiecraft.tip1": "当前能量: %d"
 }

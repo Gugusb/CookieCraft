@@ -9,4 +9,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 public class CCBlockRegistry {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, CookieCraftMod.MODID);
     public static RegistryObject<Block> MIX_COOKIE = BLOCKS.register("mix_cookie", BlockMixCookie::new);
+    public static RegistryObject<Block> EDIBLE_COOKIE = BLOCKS.register("edible_cookie", BlockEdibleCookie::new);
+    public static RegistryObject<Block> COOKIE_NAKER = BLOCKS.register("cookie_maker", BlockCookieMaker::new);
 }
