@@ -22,7 +22,7 @@ public class CCItemRegistry {
     public static RegistryObject<Item> EDIBLE_COOKIE = ITEMS.register("edible_cookie", () -> {
         return new BlockItem(CCBlockRegistry.EDIBLE_COOKIE.get(), new Item.Properties().group(CCItemGroup.COOKIE_CRAFT_MAIN));
     });
-    public static RegistryObject<Item> COOKIE_MAKER = ITEMS.register("cookie_naker", () -> {
+    public static RegistryObject<Item> COOKIE_MAKER = ITEMS.register("cookie_maker", () -> {
         return new BlockItem(CCBlockRegistry.COOKIE_NAKER.get(), new Item.Properties().group(CCItemGroup.COOKIE_CRAFT_MAIN));
     });
 }
