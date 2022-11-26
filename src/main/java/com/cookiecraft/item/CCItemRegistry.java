@@ -25,4 +25,7 @@ public class CCItemRegistry {
     public static RegistryObject<Item> COOKIE_MAKER = ITEMS.register("cookie_maker", () -> {
         return new BlockItem(CCBlockRegistry.COOKIE_NAKER.get(), new Item.Properties().group(CCItemGroup.COOKIE_CRAFT_MAIN));
     });
+    public static RegistryObject<Item> COOKIE_CHEST = ITEMS.register("cookie_chest", () -> {
+        return new BlockItem(CCBlockRegistry.COOKIE_CHEST.get(), new Item.Properties().group(CCItemGroup.COOKIE_CRAFT_MAIN));
+    });
 }

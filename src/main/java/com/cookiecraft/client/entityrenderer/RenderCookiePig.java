@@ -1,4 +1,4 @@
-package com.cookiecraft.entityrenderer;
+package com.cookiecraft.client.entityrenderer;
 
 import net.minecraft.client.renderer.entity.EntityRendererManager;
 import net.minecraft.client.renderer.entity.PigRenderer;

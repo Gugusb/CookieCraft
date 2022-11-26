@@ -1,4 +1,4 @@
-package com.cookiecraft.entitymodel;
+package com.cookiecraft.client.entitymodel;
 
 import com.cookiecraft.entity.BuffZombieEntity;
 import com.mojang.blaze3d.matrix.MatrixStack;

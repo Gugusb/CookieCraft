@@ -1,8 +1,8 @@
-package com.cookiecraft.entityrenderer;
+package com.cookiecraft.client.entityrenderer;
 
 import com.cookiecraft.CookieCraftMod;
 import com.cookiecraft.entity.BuffZombieEntity;
-import com.cookiecraft.entitymodel.BuffZombieModel;
+import com.cookiecraft.client.entitymodel.BuffZombieModel;
 import net.minecraft.client.renderer.entity.EntityRendererManager;
 import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.util.ResourceLocation;

@@ -2,6 +2,7 @@ package com.cookiecraft;
 
 import com.cookiecraft.block.CCBlockRegistry;
 import com.cookiecraft.capability.common.IHappyCapability;
+import com.cookiecraft.container.CCContainerTypeRegistry;
 import com.cookiecraft.entity.BuffZombieEntity;
 import com.cookiecraft.entity.CCEntityTypeRegistry;
 import com.cookiecraft.entity.EntityCookiePig;
@@ -36,6 +37,7 @@ public class CookieCraftMod {
         CCItemRegistry.ITEMS.register(eventBus);
         CCBlockRegistry.BLOCKS.register(eventBus);
         CCTileEntityTypeRegistry.TILE_ENTITY_TYPE_DEFERRED_REGISTER.register(eventBus);
+        CCContainerTypeRegistry.CONTAINERS.register(eventBus);
         //CCEntityTypeRegistry.ENTITY_TYPES.register(eventBus);
 
         eventBus.addListener(this::setup);
@@ -43,8 +45,10 @@ public class CookieCraftMod {
 
     private void setup(final FMLCommonSetupEvent event) {
 
+        //Register network
         CCNetWork.registerMessage();
 
+        //Register capability
         CapabilityManager.INSTANCE.register(
                 IHappyCapability.class,
                 new Capability.IStorage<IHappyCapability>() {

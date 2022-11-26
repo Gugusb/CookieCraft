@@ -15,4 +15,11 @@ public class CCTileEntityTypeRegistry {
             return new TileEntityCookieMaker();
         }, CCBlockRegistry.COOKIE_NAKER.get()).build(null);
     });
+
+    public static final RegistryObject<TileEntityType<TileEntityCookieChest>> COOKIE_CHEST =
+            TILE_ENTITY_TYPE_DEFERRED_REGISTER.register("tileentity_cookie_chest", () -> {
+                return TileEntityType.Builder.create(() -> {
+                    return new TileEntityCookieChest();
+                }, CCBlockRegistry.COOKIE_CHEST.get()).build(null);
+            });
 }
