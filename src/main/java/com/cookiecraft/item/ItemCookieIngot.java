@@ -20,7 +20,7 @@ public class ItemCookieIngot extends Item {
     @Override
     public ActionResult<ItemStack> onItemRightClick(World worldIn, PlayerEntity playerIn, Hand handIn) {
         if (worldIn.isRemote) {
-            CCNetWork.INSTANCE.sendToServer(new CCSendPack("From the Client"));
+            CCNetWork.INSTANCE.sendToServer(new CCSendPack(30));
         }
         if (!worldIn.isRemote) {
             CCNetWork.INSTANCE.send(
@@ -29,7 +29,7 @@ public class ItemCookieIngot extends Item {
                                 return (ServerPlayerEntity) playerIn;
                             }
                     ),
-                    new CCSendPack("From Server, " + playerIn.getName()));
+                    new CCSendPack(20));
         }
         return super.onItemRightClick(worldIn, playerIn, handIn);
     }

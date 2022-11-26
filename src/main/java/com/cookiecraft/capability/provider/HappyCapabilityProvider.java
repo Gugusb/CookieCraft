@@ -25,10 +25,10 @@ public class HappyCapabilityProvider implements ICapabilityProvider, INBTSeriali
     }
 
     @Nonnull
-    IHappyCapability getOrCreateCapability() {
+    public IHappyCapability getOrCreateCapability() {
         if (happyCapability == null) {
             Random random = new Random();
-            this.happyCapability = new HappyCapability(random.nextInt(1000) + 1);
+            this.happyCapability = new HappyCapability(50);
         }
         return this.happyCapability;
     }
