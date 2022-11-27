@@ -9,6 +9,7 @@ import com.cookiecraft.entity.CCEntityTypeRegistry;
 import com.cookiecraft.entity.EntityCookiePig;
 import com.cookiecraft.network.CCNetWork;
 import com.cookiecraft.network.CCSender;
+import com.cookiecraft.world.generation.OreGeneration;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.MobEntity;
@@ -31,6 +32,7 @@ import net.minecraftforge.event.AttachCapabilitiesEvent;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.event.entity.EntityJoinWorldEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent;
+import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.DeferredWorkQueue;
 import net.minecraftforge.fml.common.Mod;
@@ -40,6 +42,11 @@ import javax.annotation.Nullable;
 
 @Mod.EventBusSubscriber()
 public class CCEventHandler {
+
+    @SubscribeEvent
+    public static void biomeLoadingEvent(final BiomeLoadingEvent event){
+        OreGeneration.generateOres(event);
+    }
 
     @SubscribeEvent
     public static void onAttachCapabilityEvent(AttachCapabilitiesEvent<Entity> event) {

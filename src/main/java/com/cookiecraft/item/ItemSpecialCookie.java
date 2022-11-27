@@ -1,11 +1,10 @@
 package com.cookiecraft.item;
 
 import com.cookiecraft.itemgroup.CCItemGroup;
-import com.cookiecraft.world.WorldSavedDataOverWorld;
+import com.cookiecraft.world.worldsaveddata.WorldSavedDataOverWorld;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.Food;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
